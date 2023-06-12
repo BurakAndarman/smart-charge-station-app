@@ -1,6 +1,6 @@
 # smart_charge_station_app
 
-A smart charge station app.
+This is a mock-up smart charge station app.
 
 ## Getting Started
 
