@@ -17,25 +17,33 @@ class UserBalance extends StatelessWidget {
       child: Column(
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: const [
-              Padding(
-                padding: EdgeInsets.only(right: 8),
-                child: CircleAvatar(
-                  backgroundColor: Colors.red,
-                  child: Text(
-                    "BA",
-                    style: TextStyle(color: Colors.white),
+            children: [
+              Row(
+                children: const [
+                  Padding(
+                    padding: EdgeInsets.only(right: 8),
+                    child: CircleAvatar(
+                      backgroundColor: Colors.red,
+                      child: Text(
+                        "BA",
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
                   ),
-                ),
+                  Text(
+                    "Burak Andarman",
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16),
+                  )
+                ],
               ),
-              Text(
-                "Burak Andarman",
-                style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 16),
+              const Icon(
+                Icons.info_outline,
+                color: Colors.white,
               )
             ],
           ),
